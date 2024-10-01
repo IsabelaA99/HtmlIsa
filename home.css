@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lora", serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilização do Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 100px; 
+    background-color: #5d17ea; 
+    border-radius: 25px;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+}
+
+.btn-menu {
+    font-size: 42px;
+    color: #5d17ea;
+    cursor: pointer;
+}
+
+.logo-foto {
+    width: 110px;
+    height: 100px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5d17ea;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(94, 1, 131);
+    transform: scale(1.05);
+}
+
+/* Estilização da Navegação de Pontos */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination-dots span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.pagination-dots span:hover {
+    background-color: #5d17ea;
+    cursor: pointer;
+}
+
+/* Estilização das Seções */
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #5d17ea;
+}
+
+/* Estilização dos Cards */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .btn-menu {
+        margin-bottom: 15px;
+    }
+
+    .pagination-dots {
+        display: none; /* Esconder dots em telas pequenas, se for opcional */
+    }
+
+    .btn-contato button {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* Estilização da barra de pesquisa */
+
+.search-bar {
+    width: 50%; /* Tamanho da barra de pesquisa */
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #5d17ea !important; 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #4512b2;
+}
+
+/* Estilização do carrinho de compras */
+.shopping-cart {
+    position: relative;
+}
+
+.shopping-cart i {
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.shopping-cart .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.banner-alert {
+    background-color: #f8f9fa; /* Fundo leve (pode ajustar conforme a necessidade) */
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.banner-alert div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.banner-alert i {
+    font-size: 20px;
+    color: #dc3545; /* Cor do ícone (vermelho) */
+}
+
+.banner-alert strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.banner-alert span {
+    color: #000;
+}
+
+}
+
+.banner-alert p {
+    margin: 0;
+}
+
+.banner-alert strong {
+    color: #000;
+}
+
+/* Estilização do header ajustada para novos componentes */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 100px;
+    background-color: #5d17ea;
+    border-radius: 25px;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+}
+
+.logo-foto {
+    width: 110px;
+    height: 100px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .shopping-cart i {
+        font-size: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
