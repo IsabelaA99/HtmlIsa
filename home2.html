@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy - Lojas ao seu alcance</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-light shadow-sm">
+        <!-- Menu lateral -->
+        <div class="btn-menu" id="btn-menu">
+            <i class="bi bi-list fs-3"></i>
+        </div>
+    
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#inicio">
+                <img class="logo-foto" src="./imagens/Logo-buy-semfundo.png" alt="Logo da agência" width="150">
+            </a>
+        </div>
+    
+        <!-- Barra de pesquisa -->
+        <div class="search-bar d-flex align-items-center">
+            <input type="text" class="form-control me-2" placeholder="Buscar produtos, lojas...">
+            <button class="btn btn-primary">Pesquisar</button>
+        </div>
+    
+        <!-- Login -->
+        <div class="btn-contato">
+            <a href="login.html">
+                <button class="btn btn-primary">Login</button>
+            </a>
+        </div>
+        
+        <!-- Carrinho de compras -->
+        <div class="shopping-cart d-flex align-items-center">
+            <a href="#cart" class="text-dark me-2">
+                <i class="bi bi-cart fs-3"></i>
+            </a>
+            <span class="badge bg-danger">3</span> <!-- Número de itens no carrinho -->
+        </div>
+    </header>
+    
+    <!-- Banner de avisos com ícones e estilo -->
+    <div class="banner-alert text-center py-2 bg-light border-top border-bottom d-flex justify-content-center align-items-center">
+        <div class="d-flex align-items-center me-4">
+            <i class="bi bi-truck fs-5 me-2 text-danger"></i>
+            <span><strong>Frete Grátis</strong> acima de R$ 100,00!</span>
+        </div>
+        <div class="d-flex align-items-center me-4">
+            <i class="bi bi-arrow-counterclockwise fs-5 me-2 text-danger"></i>
+            <span><strong>Devolução Grátis</strong> em até 7 dias</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <i class="bi bi-box-seam fs-5 me-2 text-danger"></i>
+            <span><strong>Compras Locais</strong> com entrega rápida!</span>
+        </div>
+</div>
+
+
+    <!-- Navegação de pontos (opcional) -->
+    <div class="pagination-dots d-flex justify-content-center my-3">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!-- Seção de Lojas -->
+    <section id="lojas" class="container my-5">
+        <h2 class="text-center mb-4">Lojas cadastradas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagens/ACEsports.jpg" class="card-img-top" alt="Loja 1">
+                    <div class="card-body">
+                        <h5 class="card-title">ACE Sports</h5>
+                        <p class="card-text">Endereço: Rua Exemplo, 123</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagens/farmacia.jpg" class="card-img-top" alt="Loja 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Farma Popular</h5>
+                        <p class="card-text">Endereço: Rua Exemplo, 456</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagens/floricultura.jpg" class="card-img-top" alt="Loja 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Floricultura Florescer</h5>
+                        <p class="card-text">Endereço: Rua Exemplo, 789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="container my-5">
+        <h2 class="text-center mb-4">Mais vendidos</h2>
+        <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./imagens/presilha.jpg" class="card-img-top" alt="Produto A">
+                    <div class="card-body">
+                        <h5 class="card-title">Prendedor de cabelo 🌺</h5>
+                        <p class="card-text">Preço: R$ 6,99</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./imagens/Tênis New Balance 550 Feminino.jpg" class="card-img-top" alt="Produto B">
+                    <div class="card-body">
+                        <h5 class="card-title">Tênis New Balance 550</h5>
+                        <p class="card-text">Preço: R$ 500,00</p>
+                    </div>
+                </div>
+            </div> <!-- Fim do Produto 2 -->
+            <!-- Produto 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./imagens/Fone de Ouvido Xiaomi Redmi Airdots Com Bluetooth.jpg" class="card-img-top" alt="Produto C">
+                    <div class="card-body">
+                        <h5 class="card-title">Fone de Ouvido Xiaomi Redmi</h5>
+                        <p class="card-text">Preço: R$ 49,99</p>
+                    </div>
+                </div>
+            </div> <!-- Fim do Produto 3 -->
+            <!-- Produto 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./imagens/Relogio Smartwatch.jpg" class="card-img-top" alt="Produto D">
+                    <div class="card-body">
+                        <h5 class="card-title">Relogio Smartwatch</h5>
+                        <p class="card-text">Preço: R$ 49,99</p>
+                    </div>
+                </div>
+            </div> <!-- Fim do Produto 2 -->
+        </div> <!-- Fim da row -->
+    </section> <!-- Fim da seção de Produtos -->
+
+    
+
+    <!-- Seção de Promoções -->
+    <section id="promocoes" class="container my-5">
+        <h2 class="text-center mb-4">Promoções relâmpago</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./imagens/moletom.jpg" class="card-img-top" alt="Promoção 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Moletom feminino e masculino</h5>
+                        <p class="card-text">Cupom de 10% em produtos selecionados!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./imagens/download.jpg" class="card-img-top" alt="Promoção 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Blusa regata 🎀</h5>
+                        <p class="card-text">Compre 2 e leve 3 em itens selecionados!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-4">
+        <p>© 2024 Buy - Produtos Locais</p>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
