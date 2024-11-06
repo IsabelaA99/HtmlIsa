@@ -1,0 +1,124 @@
+/* btn-menu */
+
+ul {
+    list-style-type: none; /* Remove os pontos da lista */
+    margin: 0;
+    padding: 0;
+}
+
+.btn-menu i{
+    color: #5d17ea;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.btn-menu i:hover{
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.menu{
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 0%;
+    overflow: hidden;
+    transition: width 0.5s ease; /* Animação mais suave */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    border-radius: 0 10px 10px 0; /* Bordas arredondadas */
+    padding-top: 40px; /* Espaço para o conteúdo do menu */
+
+}
+
+.menu.abrir-menu{
+    width: 27%;
+}
+
+.menu.abrir-menu  ~ .overlay-menu{
+    display: block;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+.menu .btn-fechar{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .btn-fechar i{
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.menu .btn-fechar i:hover {
+    color: #5d17ea;
+}
+.menu nav ul{
+    text-align: left;
+    margin-top: 30px;
+}
+
+.menu nav ul li a{
+    color: #333;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 8%;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.menu nav ul li a:hover{
+    background-color: #5d17ea;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10%; /* Leve deslizamento à direita */
+    font-weight: 400;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+/* Contêiner do botão */
+.btn-sair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Estilos do botão */
+.btn-sair button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5d17ea;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-sair button:hover {
+    background-color: #4a13b2;
+    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
+}
+
+
+/* Fim */
